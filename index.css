@@ -1,5 +1,5 @@
 html, body {
-    font-family: Museo Sans Cyrl;
+    font-family: Museo Sans Cyrl, Arial;
     font-size: 16px;
     line-height: 175%;
 
@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-    font-family: Museo Sans Cyrl Bold;
+    font-family: Museo Sans Cyrl Bold, Arial;
     font-size: 16px;
     line-height: 28px;
     margin: 0;
@@ -148,19 +148,29 @@ header nav a.active{
 
     background: white;
 
-    box-shadow: 0px 8px 24px rgba(29, 29, 57, 0.2);
-    border-radius: 5px;
+    box-shadow: 0 8px 24px rgba(29, 29, 57, 0.2);
+    border-radius: 5px 5px 0;
+}
+
+.bubble::after {
+    content: '';
+    background: url('src/img/tail.png');
+    position: absolute;
+    right: -37px;
+    top: 138px;
+    height: 38px;
+    width: 44px;
+
+    filter: drop-shadow( 0px 8px 24px rgba(29, 29, 57, 0.2) );
 }
 
 .bubble .text {
     margin: 46px 25px 46px 0;
-
     max-width: 396px;
     min-height: 84px;
+    flex: 0 1 396px;
 
     color: #333;
-
-    flex: 0 1 396px;
 }
 
 .bubble .right-block {
