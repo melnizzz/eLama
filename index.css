@@ -1,0 +1,412 @@
+html, body {
+    font-family: Museo Sans Cyrl;
+    font-size: 16px;
+    line-height: 175%;
+
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    font-size: 14px;
+    line-height: 26px;
+
+    background: #03973D;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+
+    padding: 17px 40px;
+    height: 60px;
+
+    white-space: nowrap;
+}
+button:hover {
+    background: #27BC62;
+}
+button:active {
+    box-shadow: inset 0 0 5px 1px #03973D;
+}
+
+a {
+    display: inline-block;
+
+    color: #039BE6;
+    text-decoration: none;
+}
+a:hover {
+    color: #38C4FF;
+}
+a:active {
+    color: #039BE6;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 133%;
+    margin: 0;
+
+    color: #1D1D39;
+}
+
+h2 {
+    font-family: Museo Sans Cyrl Bold;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+
+    color: #1D1D39;
+}
+
+
+.content {
+    height: 100%;
+    width: 95%;
+    max-width: 1200px;
+    min-width: 485px;
+
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    height: 90px;
+}
+
+header .logo {
+    display: inline-block;
+    margin-right: 100px;
+    margin-top: 25px;
+}
+
+header button {
+    float: right;
+    margin-top: 25px;
+
+    background: #039BE6;
+
+    padding: 8px 30px;
+    width: 100px;
+    height: 40px;
+}
+
+header button:hover {
+    background: #38C4FF;
+}
+
+header button:active {
+    box-shadow: inset 0 0 3px 1px #039BE6;
+}
+
+header nav {
+    display: inline-block;
+    margin-top: 31px;
+    vertical-align: top;
+}
+
+header nav a {
+    margin: 0 20px;
+    color: #1D1D39;
+}
+header nav a.active{
+    color: #039BE6;
+}
+
+/* top-block */
+
+.top-block {
+    height: 360px;
+    background: #F2F3F8;
+}
+
+.top-block .content{
+    position: relative;
+    top: 104px;
+
+    display: block;
+    height: 96px;
+
+    text-align: center;
+}
+
+/* bubble */
+
+.bubble {
+    position: relative;
+    top: -80px;
+    z-index: 5;
+
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 610px;
+    width: 75vw;
+    min-height: 175px;
+
+    background: white;
+
+    box-shadow: 0px 8px 24px rgba(29, 29, 57, 0.2);
+    border-radius: 5px;
+}
+
+.bubble .text {
+    margin: 46px 25px 46px 0;
+
+    max-width: 396px;
+    min-height: 84px;
+
+    color: #333;
+
+    flex: 0 1 396px;
+}
+
+.bubble .right-block {
+    height: 100px;
+    width: 191px;
+    margin-top: 38px;
+
+    flex: 1 0 191px;
+}
+
+.bubble a {
+    display: block;
+    margin: 18px auto 0;
+    height: 21px;
+    width: 165px;
+
+    font-size: 14px;
+    line-height: 150%;
+}
+
+/* main-block */
+
+.main-block {
+    margin-top: 100px;
+}
+
+.top {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top article {
+    margin-right: 60px;
+    max-width: 33040px;
+    flex: 1 1 340px;
+}
+
+.top article:last-child {
+    margin-right: 0;
+}
+
+.top p {
+    font-size: 14px;
+    line-height: 26px;
+
+    margin-top: 10px;
+}
+
+.bottom {
+    margin-top: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bottom img{
+    width: 395px;
+    height: 350px;
+    margin-right: 50px;
+    margin-bottom: 130px;
+}
+
+.bottom article {
+    max-width: 559px;
+}
+
+.bottom p{
+    font-size: 14px;
+    line-height: 26px;
+
+    max-width: 473px;
+    margin-top: 60px;
+}
+
+.bottom button {
+    margin-top: 40px;
+}
+
+.bottom a {
+    margin-top: 44px;
+    margin-left: 31px;
+    width: 200px;
+    height: 51px;
+}
+
+/* bottom-block */
+
+.bottom-block {
+    margin-top: 180px;
+    height: 436px;
+    background: #F2F3F8;
+}
+
+.bottom-block .content{
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-block .step {
+    display: inline-block;
+    margin: 0 10px;
+
+    flex: 0 1 365px;
+}
+
+.step.step-1 {
+    margin-right: 95px;
+}
+
+.step-1 button {
+    margin-top: 40px;
+}
+
+.arrow-1 {
+    position: relative;
+    top: -230px;
+    left: 210px;
+}
+
+.arrow-2 {
+    margin-right: 15px;
+}
+
+/*footer*/
+
+footer {
+    background: #222A35;
+    padding-top: 60px;
+}
+
+footer nav a {
+    height: 20px;
+    padding-right: 40px;
+}
+
+footer nav a:last-child {
+    float: right;
+    padding-right: 0;
+}
+
+footer nav a img {
+    transform: translate(0, -10px);
+}
+
+footer hr {
+    margin-top: 60px;
+    border-color: rgba(196, 196, 196, 0.1);
+}
+
+.contacts {
+    margin-top: 46px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contacts .logo {
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.contacts p {
+    color: #828282;
+    font-size: 14px;
+    line-height: 26px;
+
+    margin-top: 11px;
+}
+
+.contacts a {
+    color: #F4F4F4;
+}
+
+.contacts div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contacts .mail a{
+    color: #00B3FF;
+    display: block;
+
+    position: relative;
+    top: -2px;
+}
+
+.contacts .mail a:last-child{
+    margin-top: 11px;
+}
+
+.contacts .phone {
+    margin-right: 50px;
+}
+
+.contacts .phones > * {
+    white-space: nowrap;
+}
+
+.contacts .social-networks {
+    margin-top: 15px;
+    margin-left: 50px;
+    width: max-content;
+}
+
+.contacts .social-networks > * {
+    white-space: nowrap;
+}
+
+.contacts .social {
+    width: 22px;
+    height: 22px;
+
+    margin-right: 24px;
+}
+
+.copyrights {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.copyrights p {
+    color: #484B50;
+
+    display: inline-block;
+    margin: 0;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: local('Museo Sans Cyrl 300'), local('MuseoSansCyrl-300'), url('src/fonts/Museosanscyrl300.woff') format('woff'), url('src/fonts/Museosanscyrl300.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl Bold';
+    src: local('Museo Sans Cyrl 500'), local('MuseoSansCyrl-500'), url('src/fonts/Museosanscyrl500.woff') format('woff'), url('src/fonts/Museosanscyrl500.woff2') format('woff2'), url('src/fonts/Museosanscyrl500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
